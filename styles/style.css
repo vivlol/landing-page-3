@@ -170,6 +170,14 @@ body {
     font-weight: bold;
 }
 
+.car__item__image:hover img {
+    transform: scale(1.1);
+}
+.car__item__image img {
+    vertical-align: bottom;
+    transition: all .3s;
+}
+
 .price {
     overflow: hidden;
 }
@@ -236,10 +244,3 @@ body {
     font-size: 15px;
     color: #030305;
 }
-
-
-
-
-
-
-
