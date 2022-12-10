@@ -18,3 +18,14 @@ document.getElementById("price__action").onclick = function () {
         alert("Спасибо за заявку, Мы свяжемся с вами в ближайшее время!");
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    let layer = document.querySelector('.price__image');
+    document.addEventListener('mousemove', (event) => {
+        layer.style.transform = 'translate3d(' + ((event.clientX * 0.5) / 9) + 'px,' + ((event.clientY * 0.3) / 8) + 'px,0px)';
+    });
+
+    const elem = document.querySelector(".main");
+    document.addEventListener('scroll', () => {
+        elem.style.backgroundPositionX = '0' + (0.3 * window.pageYOffset) + 'px';
+    })
+});
